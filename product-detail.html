@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y&M Oversized Tee - Y&M Streetwear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Y&M Streetwear</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="mainImage" src="img/front.jpg" alt="Y&M Oversized Tee">
+                </div>
+                <div class="thumbnail-gallery">
+                    <img src="img/front.jpg" alt="Front view" onclick="changeMainImage('img/front.jpg')">
+                    <img src="img/back.jpg" alt="Back view" onclick="changeMainImage('img/back.jpg')">
+                    <img src="img/side.jpg" alt="Side view" onclick="changeMainImage('img/side.jpg')">
+                    <img src="img/back2.jpg" alt="Back view 2" onclick="changeMainImage('img/back2.jpg')">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1>Y&M Oversized Tee</h1>
+                <div class="product-divider"></div>
+                <p class="product-price">R250</p>
+                
+                <div class="product-description">
+                    <h3>Description</h3>
+                    <p>Experience premium comfort with our Y&M Oversized Tee, crafted from soft, high-quality cotton. Designed in our signature oversized box-cut style, this tee is the perfect blend of comfort and contemporary fashion.</p>
+                    
+                    <h3>Features</h3>
+                    <ul>
+                        <li>100% premium cotton material</li>
+                        <li>Oversized box cut design</li>
+                        <li>Perfect for everyday wear</li>
+                        <li>Comfortable and breathable</li>
+                        <li>Modern streetwear aesthetic</li>
+                    </ul>
+
+                    <h3>Size Guide</h3>
+                    <p>Available in all standard sizes. The oversized fit runs true to size but provides extra room for a relaxed silhouette.</p>
+                </div>
+
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button onclick="decreaseQuantity()">-</button>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <button class="btn primary" onclick="addToCartDetail()">Add to Cart</button>
+                </div>
+
+                <div class="back-link">
+                    <a href="shop.html">← Back to Shop</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Y&M Streetwear. <a href="https://www.instagram.com/ym_streetwear/" target="_blank">Follow us on Instagram</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeMainImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+
+        function increaseQuantity() {
+            const qty = document.getElementById('quantity');
+            qty.value = parseInt(qty.value) + 1;
+        }
+
+        function decreaseQuantity() {
+            const qty = document.getElementById('quantity');
+            if (parseInt(qty.value) > 1) {
+                qty.value = parseInt(qty.value) - 1;
+            }
+        }
+
+        function addToCartDetail() {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            for (let i = 0; i < quantity; i++) {
+                addToCart('Y&M Oversized Tee', '250');
+            }
+            alert(`${quantity} item(s) added to cart!`);
+        }
+    </script>
+</body>
+</html>
