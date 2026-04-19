@@ -105,34 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update cart display on cart page
     updateCartDisplay();
-
-    // Add page transition behavior for internal navigation
-    const internalLinks = document.querySelectorAll('a[href]:not([target="_blank"])');
-    internalLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            const href = this.getAttribute('href');
-            if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
-            const isExternal = href.startsWith('http') && !href.includes(window.location.hostname);
-            if (isExternal) return;
-
-            event.preventDefault();
-            document.body.classList.add('page-leave');
-            setTimeout(() => {
-                window.location.href = href;
-            }, 450);
-        });
-    });
-
-    // Loading animation and slide-in effect
-    const loading = document.createElement('div');
-    loading.className = 'loading';
-    loading.innerHTML = '<div class="spinner"></div>';
-    document.body.appendChild(loading);
-
-    setTimeout(() => {
-        loading.classList.add('hidden');
-        document.body.classList.add('loaded');
-    }, 1000);
 });
 
 // Smooth scrolling for anchor links
