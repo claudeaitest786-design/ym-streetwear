@@ -67,20 +67,20 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 2rem;
+    padding: 1.6rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .logo {
-    font-size: 1.9rem;
+    font-size: 2.4rem;
     font-weight: 700;
     color: #000;
     text-decoration: none;
     position: relative;
     display: inline-block;
     line-height: 1;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.3rem;
     transition: color 0.3s ease;
 }
 
@@ -968,14 +968,14 @@ footer a:hover {
 
     nav {
         position: relative;
-        padding: 1.2rem 1rem;
+        padding: 1.6rem 1rem;
         align-items: flex-end;
     }
 
     .logo {
-        font-size: 1.7rem;
+        font-size: 2.1rem;
         margin-left: 0;
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.3rem;
     }
 
     .hamburger {
@@ -1189,13 +1189,13 @@ footer a:hover {
     }
 
     nav {
-        padding: 1rem 0.75rem;
+        padding: 1.5rem 0.75rem;
     }
 
     .logo {
-        font-size: 1.45rem;
+        font-size: 1.8rem;
         margin-left: 0;
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.3rem;
     }
 
     main {
@@ -1241,13 +1241,13 @@ footer a:hover {
     }
 
     nav {
-        padding: 1rem 0.9rem;
+        padding: 1.5rem 0.9rem;
     }
 
     .logo {
-        font-size: 1.55rem;
+        font-size: 1.9rem;
         margin-left: 0;
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.3rem;
     }
 
     main {
