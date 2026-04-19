@@ -966,6 +966,12 @@ footer a:hover {
 
     nav {
         position: relative;
+        padding: 0.9rem 1rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+        margin-left: 0;
     }
 
     .hamburger {
@@ -1179,11 +1185,12 @@ footer a:hover {
     }
 
     nav {
-        padding: 0.75rem 1rem;
+        padding: 0.75rem 0.8rem;
     }
 
     .logo {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
+        margin-left: 0;
     }
 
     main {
@@ -1229,11 +1236,12 @@ footer a:hover {
     }
 
     nav {
-        padding: 0.9rem 1.5rem;
+        padding: 0.9rem 1rem;
     }
 
     .logo {
-        font-size: 1.2rem;
+        font-size: 1.35rem;
+        margin-left: 0;
     }
 
     main {
