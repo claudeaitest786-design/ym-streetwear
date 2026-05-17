@@ -1,0 +1,48 @@
+.product-cover {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-cover .product-image {
+    margin-bottom: 0;
+}
+
+.coming-soon-banner {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.52);
+    color: #fff;
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 700;
+    inset: 0;
+    justify-content: center;
+    letter-spacing: 0.08em;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.preorder-product:hover .product-image {
+    display: block;
+}
+
+.preorder-btn {
+    background-color: #000;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.preorder-btn:hover {
+    background-color: #1a1a1a;
+}
+
+.hoodie-thumbnails {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.preorder-actions .btn {
+    width: 100%;
+}
