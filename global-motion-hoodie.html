@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Y&amp;M Global Motion Hoodie - Y&amp;M Streetwear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hoodie.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Y&amp;M Streetwear</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="mainImage" src="img/global-motion-hoodie-front.jpg" alt="Y&amp;M Global Motion Hoodie Front">
+                </div>
+                <div class="thumbnail-gallery hoodie-thumbnails">
+                    <img src="img/global-motion-hoodie-front.jpg" alt="Front view" onclick="changeMainImage('img/global-motion-hoodie-front.jpg')">
+                    <img src="img/global-motion-hoodie-back.jpg" alt="Back view" onclick="changeMainImage('img/global-motion-hoodie-back.jpg')">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1>Y&amp;M Global Motion Hoodie</h1>
+                <div class="product-divider"></div>
+                <p class="product-price">Coming Soon</p>
+
+                <div class="product-description">
+                    <h3>Description</h3>
+                    <p>Built for the streets, inspired by ambition. The Global Motion Hoodie combines a clean oversized fit with bold statement typography - representing a brand built locally with a global mindset. Premium comfort, everyday versatility, and timeless streetwear energy in one piece.</p>
+
+                    <h3>Availability</h3>
+                    <p>This product is coming soon and is available for pre-order interest.</p>
+                </div>
+
+                <div class="product-actions preorder-actions">
+                    <a class="btn primary" href="https://www.instagram.com/ym_streetwear/" target="_blank" rel="noopener">Pre Order Now</a>
+                </div>
+
+                <div class="back-link">
+                    <a href="shop.html">Back to Shop</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Y&amp;M Streetwear. <a href="https://www.instagram.com/ym_streetwear/" target="_blank">Follow us on Instagram</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function changeMainImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    </script>
+</body>
+</html>
